@@ -47,7 +47,7 @@ jobs:
         with:
           packages: lld
       - if: steps.cache.outputs.cache-hit != 'true'
-        uses: dtolnay/rust-toolchain@fa04a1451ff1842e2626ccb99004d0195b455a88
+        uses: dtolnay/rust-toolchain@e2a55d2ffb04f378e9626c28d38b36d230d1e12f
         with:
           toolchain: ${{ steps.settings.outputs.RUST_TOOLCHAIN }}
       - if: steps.cache.outputs.cache-hit != 'true'
